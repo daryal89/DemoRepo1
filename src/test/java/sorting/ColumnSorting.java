@@ -1,0 +1,67 @@
+package sorting;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+public class ColumnSorting {
+
+	public static void main(String[] args) {
+		// Retriveve all value of veg/fruit name column
+
+		// original ArrayList
+
+		// ArrayList2 - sort (Copy of ArrayList)
+
+		// Comparing ArrayList with ArrayList2
+		// If ArrayList and ArrayList2 are not equal then
+
+		System.setProperty("webdriver.chrome.driver", ".//chromedriver.exe");
+
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().deleteCookieNamed("sessionKey");
+
+		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
+
+		List<WebElement> firstCollist = driver.findElements(By.cssSelector("tr td:nth-child(2)"));
+		// creating an Arraylist
+
+		ArrayList<String> originalList = new ArrayList<String>();
+		// Iterator<String>it =originalList.iterator();
+		for (int i = 0; i < firstCollist.size(); i++) {
+			firstCollist.get(i).getText();
+			// System.out.println(firstCollist.get(i).getText());
+			originalList.add(firstCollist.get(i).getText());
+		}
+		System.out.println("--------------original list---------");
+		for (String st : originalList) {
+			System.out.println(st);
+		}
+
+		// copying the arrayList
+		ArrayList<String> copiedList = new ArrayList<String>();
+		for (int i = 0; i < originalList.size(); i++) {
+			copiedList.add(originalList.get(i));
+		}
+
+		// Sorting the copied list
+		System.out.println("--------- Copied List------------");
+		Collections.sort(copiedList);
+		for (String s : copiedList) {
+			System.out.println(s);
+		}
+
+		Assert.assertTrue(originalList.equals(copiedList));
+	}
+
+}

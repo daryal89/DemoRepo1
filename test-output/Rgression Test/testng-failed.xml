@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Rgression Test]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testng.Day5">
+        <methods>
+          <include name="aMethod"/>
+          <include name="bsuite"/>
+          <include name="bMethod"/>
+          <include name="login"/>
+          <include name="bClass"/>
+          <include name="aClass"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- testng.Day5 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Rgression Test] -->

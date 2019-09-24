@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
+  <parameter name="URL" value="qaclickacademy.com"/>
+  <parameter name="username" value="Dhruba Aryal"/>
+  <test thread-count="5" name="Loan Department Test(failed)">
+    <classes>
+      <class name="testng.Day5">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- testng.Day5 -->
+    </classes>
+  </test> <!-- Loan Department Test(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->

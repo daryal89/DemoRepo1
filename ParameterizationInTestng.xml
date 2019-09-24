@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+	<listeners>
+		<listener class-name="testng.Listeners" />
+	</listeners>
+	
+	<parameter name="URL" value="qaclickacademy.com" />
+	<parameter name="username" value="Dhruba Aryal" />
+
+	<test name="Loan Department Test">
+	
+		<classes>
+			<class name="testng.Day5" />
+			<!-- <class name="testng.Listeners"/> -->
+			<!-- <class name="testng.Day3" /> <class name="testng.Day1" /> <class 
+				name="testng.Day2" /> <class name="testng.Annotations" /> -->
+		</classes>
+	</test>
+
+	<test name="HomeLoan Test">
+		<parameter name="URL" value="www.google.com" />
+		<parameter name="username" value="Ritu Adhikari" />
+		<parameter name="password" value="sangam" />
+		<classes>
+			<class name="testng.Day4" />
+		</classes>
+	</test>
+</suite> 

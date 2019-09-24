@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+	<test thread-count="5" name="Personal loan">
+		<classes>
+			<class name="testng.Day1" />
+			<class name='testng.Day2' />
+			<!-- <class name="testng.Day3" /> -->
+
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="HomeLoan Department">
+		<classes><!-- 
+			<class name="testng.Day4" /> -->
+		</classes>
+	</test>
+</suite> <!-- Suite -->

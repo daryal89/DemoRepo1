@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Test Suite">
+	<test name=" Smoke Test Test">
+		<groups>
+			<run>
+				<include name="SmokeTest"/>
+				<!-- <exclude name="SmokeTest"/> -->
+			</run>
+		</groups>
+		<classes>
+			<class name="testng.Day3" />
+			<class name="testng.Day4" />
+			<class name="testng.Day1" />
+			<class name="testng.Day2" />
+			<class name="testng.Annotations" />
+		</classes>
+	</test>
+</suite> 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14594" started-at="2019-09-21T23:03:55Z" finished-at="2019-09-21T23:04:09Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14594" started-at="2019-09-21T23:03:55Z" finished-at="2019-09-21T23:04:09Z">
+      <class name="datadriven.ChildClass">
+        <test-method status="PASS" signature="OpeningBrowser()[pri:0, instance:datadriven.ChildClass@523884b2]" name="OpeningBrowser" duration-ms="5240" started-at="2019-09-21T23:03:55Z" finished-at="2019-09-21T23:04:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpeningBrowser -->
+        <test-method status="PASS" signature="flightBooking()[pri:0, instance:datadriven.ChildClass@523884b2]" name="flightBooking" duration-ms="4737" started-at="2019-09-21T23:04:00Z" finished-at="2019-09-21T23:04:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightBooking -->
+        <test-method status="PASS" signature="logIn()[pri:0, instance:datadriven.ChildClass@523884b2]" name="logIn" duration-ms="4591" started-at="2019-09-21T23:04:05Z" finished-at="2019-09-21T23:04:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+      </class> <!-- datadriven.ChildClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
